@@ -23,8 +23,14 @@ $(function() {
         $('.grid').remove();
         var width = prompt("Choose a width");
         var height = prompt("Choose a height");
-        gridSquares(width, height);
-        hoverGrid();
+        if (width > 65 || height > 65) {
+            alert("Please choose numbers less than 64");
+        } else if (isNaN(width) || isNaN(height)) {
+            alert("Please only use numbers");
+        } else {
+            gridSquares(width, height);
+            hoverGrid();
+        }
     });
 
     gridSquares(16, 16);
