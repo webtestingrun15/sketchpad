@@ -14,7 +14,10 @@ $(function() {
     function hoverGrid() {
         $('.grid').on('mouseenter', function(event) {
             event.preventDefault();
-            $(this).addClass('highlight');
+            var rgb = 'rgb(' + (Math.floor((256)*Math.random()) + 10) + ',' + (Math.floor((256)*Math.random()) + 10) + ',' + (Math.floor((256)*Math.random()) + 10) + ')';
+            $(this).css('background', rgb);
+            // Uncomment below to use default background
+            // $(this).addClass('highlight');
         });
     }
 
