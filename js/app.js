@@ -8,4 +8,9 @@ $(function(){
             $grid.appendTo($container);
         }
     }
+
+    $('.grid').on('mouseenter', function(event) {
+        event.preventDefault();
+        $(this).addClass('highlight');
+    });
 });

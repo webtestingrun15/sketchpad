@@ -451,3 +451,7 @@ button {
     vertical-align: middle;
     display: inline-table;
 }
+
+.highlight {
+    background-color: #000;
+}
